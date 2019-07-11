@@ -1,10 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
 
 const Routes = () => {
   return (
-    <Switch location={location}>
-      <Route exact path="/" render={<h1>I'm the root route!</h1>}/>
+    <Switch>
+      <Route exact path="/" render={() => (
+        <Navbar/>
+      )}/>
     </Switch>
   )
 }
