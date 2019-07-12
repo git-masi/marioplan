@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import Dashboard from './components/dashboard/Dashboard';
 import ProjectDetails from './components/projects/ProjectDetails';
 import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
 
 const Routes = () => {
   return (
@@ -18,6 +19,9 @@ const Routes = () => {
         )}/>
         <Route exact path="/signin" render={() => (
           <SignIn/>
+        )}/>
+        <Route exact path="/signup" render={() => (
+          <SignUp/>
         )}/>
       </Switch>
     </Fragment>
