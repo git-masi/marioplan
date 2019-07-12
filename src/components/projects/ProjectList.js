@@ -1,33 +1,12 @@
 import React from 'react';
+import ProjectSummary from './ProjectSummary';
 
 const ProjectList = props => {
   return (
     <div className="project-list section">
-
-      <div className="card z-depth-0 project-summary">
-        <div className="card-content grey-text text-darken-3">
-          <span className="card-title">Project Title Here</span>
-          <p>Posted By: Some Dude</p>
-          <p className="grey-text">Date Goes Here</p>
-        </div>
-      </div>
-
-      <div className="card z-depth-0 project-summary">
-        <div className="card-content grey-text text-darken-3">
-          <span className="card-title">Project Title Here</span>
-          <p>Posted By: Some Dude</p>
-          <p className="grey-text">Date Goes Here</p>
-        </div>
-      </div>
-
-      <div className="card z-depth-0 project-summary">
-        <div className="card-content grey-text text-darken-3">
-          <span className="card-title">Project Title Here</span>
-          <p>Posted By: Some Dude</p>
-          <p className="grey-text">Date Goes Here</p>
-        </div>
-      </div>
-      
+      <ProjectSummary title="some post" author="some dude" date="some date"/>
+      <ProjectSummary title="some other post" author="some chick" date="some other date"/>
+      <ProjectSummary title="yet another post" author="some sentient plant" date="the future"/>
     </div>
   )
 }
